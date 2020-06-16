@@ -1,8 +1,15 @@
 Set WshShell = WScript.CreateObject("WScript.Shell")
-WshShell.AppActivate "CCLauncher_Client"
 WScript.Sleep 1500
-WshShell.SendKeys "ID" '* <-- CCPortal Username
+WshShell.AppActivate "Teilnehmer)"
+WScript.Sleep 1500
+WshShell.AppActivate "Login"
+WScript.Sleep 1500
+WshShell.SendKeys "username" '* <-- CCPortal Username
+WScript.Sleep 200
 WshShell.SendKeys "{TAB}"
-WshShell.SendKeys "PW" '* <-- CCPortal Password
+WScript.Sleep 200
+WshShell.SendKeys "password" '* <-- CCPortal Password
+WScript.Sleep 200
 WshShell.SendKeys "{ENTER}"
-WshShell.SendKeys "^s"
+WScript.Sleep 6000
+WshShell.AppActivate "Teilnehmer)"
